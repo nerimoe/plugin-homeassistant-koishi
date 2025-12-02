@@ -63,9 +63,9 @@ export function apply(ctx: Context, config: Config) {
           let str = "";
           devs.forEach((dev) => {
             if (dev.status) {
-              str += `${name} 关闭成功\n`;
+              str += `${dev.name} 关闭成功\n`;
             } else {
-              str += `${name} 关闭失败，内部错误，请联系管理人员\n`;
+              str += `${dev.name} 关闭失败，内部错误，请联系管理人员\n`;
             }
           })
           return str;
